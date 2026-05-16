@@ -118,19 +118,40 @@ new Chart(ctx, {
   }
 });
 
-// ---- CONTACT FORM (visual only) ----
+// ---- CONTACT FORM LOGIC (Web3Forms) ----
 const form = document.getElementById("contact-form");
 if (form) {
-  form.addEventListener("submit", (e) => {
+  form.addEventListener("submit", async (e) => {
     e.preventDefault();
     const btn = form.querySelector("button");
-    btn.textContent = "Message Sent ✓";
+    const originalText = btn.textContent;
+    btn.textContent = "Sending...";
     btn.style.opacity = "0.7";
+    btn.disabled = true;
+
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+
+      if (response.ok) {
+        btn.textContent = "Message Sent ✓";
+        form.reset();
+      } else {
+        btn.textContent = "Error Sending!";
+      }
+    } catch (error) {
+      btn.textContent = "Network Error";
+    }
+
     setTimeout(() => {
-      btn.textContent = "Send Message";
+      btn.textContent = originalText;
       btn.style.opacity = "1";
-      form.reset();
-    }, 2000);
+      btn.disabled = false;
+    }, 3000);
   });
 }
 
