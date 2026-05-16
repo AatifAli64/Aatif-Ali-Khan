@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aatif Ali Khan — Cybersecurity & Automation Developer. Portfolio showcasing security engineering, threat detection, and full-stack development projects.">
+  <title>Aatif Ali Khan | Cybersecurity & Automation Developer</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+</head>
+<body>
+
+<!-- ======== NAVBAR ======== -->
+<nav class="navbar" id="navbar">
+  <a href="#" class="nav-logo">Aatif Ali Khan<span class="dot">.</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ======== HERO ======== -->
+<section class="hero" id="hero">
+  <div class="hero-content">
+    <p class="hero-greeting">👋 Hello, I'm</p>
+    <h1 class="hero-name">Aatif Ali Khan</h1>
+    <div class="hero-title-line"><span id="typewriter-text"></span><span class="cursor">|</span></div>
+    <p class="hero-bio">Cybersecurity student with hands-on experience in security engineering, threat detection, and malware analysis. I build SOAR platforms, DLP engines, forensic tools, and full-stack applications — turning complex security challenges into clean, automated solutions.</p>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn-primary">View Projects</a>
+      <a href="#" class="btn-outline" id="download-cv-btn">Download CV</a>
+    </div>
+  </div>
+</section>
+
+<!-- ======== ABOUT ======== -->
+<section class="section" id="about">
+  <span class="section-label">01 — About</span>
+  <h2 class="section-title">About Me</h2>
+  <div class="section-divider"></div>
+  <div class="about-grid">
+    <div class="about-left">
+      <div class="avatar">AK</div>
+      <span class="about-name">Aatif Ali Khan</span>
+      <span class="about-jobtitle">Cybersecurity & Automation Developer</span>
+    </div>
+    <div class="about-right">
+      <p>I'm a 6th-semester Cybersecurity student at FAST National University of Computer and Emerging Sciences, Islamabad. My academic journey has been driven by a deep fascination with how systems break — and how to build them so they don't.</p>
+      <p>From engineering a hybrid-cloud SOAR platform with Suricata IDS and pfSense, to building a forensic MFT Recovery Tool that performs byte-level data carving on raw physical disks, I focus on creating tools that solve real-world security problems. My project portfolio spans DLP engines, malware detection with AutoML, distributed automation systems, and full-stack web applications secured with JWT and MFA.</p>
+      <p>I'm a winner of the Programming Competition at the University of Mianwali, an active member of FAST CS Society's Operations Team, and a former House Captain who led 100+ students. When I'm not coding, you'll find me competing in basketball games or diving into competitive programming challenges.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======== SKILLS ======== -->
+<section class="section" id="skills">
+  <span class="section-label">02 — Skills</span>
+  <h2 class="section-title">Technical Skills</h2>
+  <div class="section-divider"></div>
+  <div class="skills-grid">
+    <div class="chart-container">
+      <canvas id="skillsChart" width="300" height="300"></canvas>
+    </div>
+    <div class="skill-list">
+      <div class="skill-row"><span class="skill-dot"></span><span class="skill-name">Python</span><span class="skill-pct">92%</span></div>
+      <div class="skill-row"><span class="skill-dot"></span><span class="skill-name">JavaScript (ES6+)</span><span class="skill-pct">78%</span></div>
+      <div class="skill-row"><span class="skill-dot"></span><span class="skill-name">C++</span><span class="skill-pct">75%</span></div>
+      <div class="skill-row"><span class="skill-dot"></span><span class="skill-name">Security Operations (Suricata, pfSense, Burp Suite)</span><span class="skill-pct">88%</span></div>
+      <div class="skill-row"><span class="skill-dot"></span><span class="skill-name">Networking & VPN (WireGuard, Wireshark, Nmap)</span><span class="skill-pct">82%</span></div>
+      <div class="skill-row"><span class="skill-dot"></span><span class="skill-name">Docker & DevOps (Linux, Git, GCP)</span><span class="skill-pct">75%</span></div>
+      <div class="skill-row"><span class="skill-dot"></span><span class="skill-name">n8n (Workflow Automation)</span><span class="skill-pct">80%</span></div>
+      <div class="skill-row"><span class="skill-dot"></span><span class="skill-name">MERN Stack & Web Development</span><span class="skill-pct">80%</span></div>
+      <div class="skill-row"><span class="skill-dot"></span><span class="skill-name">Digital Forensics & Malware Analysis</span><span class="skill-pct">85%</span></div>
+      <div class="skill-row"><span class="skill-dot"></span><span class="skill-name">Machine Learning (CNNs, AutoML, DARTS)</span><span class="skill-pct">72%</span></div>
+      <div class="skill-row"><span class="skill-dot"></span><span class="skill-name">Assembly (x86/MASM)</span><span class="skill-pct">65%</span></div>
+      <div class="skill-row"><span class="skill-dot"></span><span class="skill-name">Bash Scripting</span><span class="skill-pct">70%</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======== PROJECTS ======== -->
+<section class="section" id="projects">
+  <span class="section-label">03 — Projects</span>
+  <h2 class="section-title">Featured Work</h2>
+  <div class="section-divider"></div>
+  <div class="projects-grid">
+
+    <!-- Card 1 -->
+    <div class="project-card">
+      <span class="project-tag">AI + SECURITY</span>
+      <h3>Automated Threat Detection & Response System (SOAR)</h3>
+      <p>Hybrid-cloud SOAR platform integrating Suricata IDS and pfSense to automate threat responses, featuring a risk scoring algorithm mapped to compliance frameworks that reduces false positives.</p>
+      <div class="project-links"><span style="color:#555;font-size:11px;">Suricata · pfSense · n8n · Docker · WireGuard</span></div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="project-card">
+      <span class="project-tag">FORENSICS</span>
+      <h3>MFT Recovery Tool: Advanced Digital Forensics Utility</h3>
+      <p>Desktop forensics application leveraging raw physical disk I/O to bypass OS-level corruption and recover permanently deleted NTFS records via custom MFT parsing and signature carving.</p>
+      <div class="project-links">
+        <a href="https://github.com/AatifAli64/MFT-Recovery-tool.git" target="_blank">→ GitHub</a>
+        <span style="color:#555;font-size:11px;">Python · PySide6 · NTFS MFT Parsing</span>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="project-card">
+      <span class="project-tag">AI AUTOMATION</span>
+      <h3>Distributed AI Meeting Automation System</h3>
+      <p>Autonomous meeting agent using Selenium with anti-bot evasion, cloud-offloaded Speech-to-Text via Faster-Whisper on Kaggle GPUs, and event-driven keyword detection for real-time chat responses.</p>
+      <div class="project-links">
+        <a href="https://github.com/AatifAli64/Online-Classes-Sucks-2.0.git" target="_blank">→ GitHub</a>
+        <span style="color:#555;font-size:11px;">Python · Selenium · FastAPI · Faster-Whisper</span>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="project-card">
+      <span class="project-tag">AI</span>
+      <h3>DocuMind AI: Event-Driven Multi-Doc RAG System</h3>
+      <p>Scalable RAG backend with FastAPI and Inngest orchestrating durable workflows for PDF ingestion, Qdrant vector search with OpenAI embeddings, and multi-document comparison intelligence.</p>
+      <div class="project-links">
+        <a href="https://github.com/AatifAli64/DocMind-AI-Event-Driven-Multi-Document-RAG-Intelligence.git" target="_blank">→ GitHub</a>
+        <span style="color:#555;font-size:11px;">FastAPI · Streamlit · Inngest · Qdrant</span>
+      </div>
+    </div>
+
+    <!-- Card 5 (hidden) -->
+    <div class="project-card hidden-card">
+      <span class="project-tag">SECURITY</span>
+      <h3>Hash-Based Data Loss Prevention (DLP) Engine</h3>
+      <p>Zero-knowledge DLP platform using SHA3-256 exact matching and SimHash fuzzy logic to detect unauthorized data exfiltration, with role-based access and forensic audit logging.</p>
+      <div class="project-links">
+        <a href="https://github.com/AatifAli64/hash-based-dlp-system.git" target="_blank">→ GitHub</a>
+        <span style="color:#555;font-size:11px;">Python · Flask · SQLite · SimHash</span>
+      </div>
+    </div>
+
+    <!-- Card 6 (hidden) -->
+    <div class="project-card hidden-card">
+      <span class="project-tag">SECURITY</span>
+      <h3>SecureShare: Secure File-Sharing Platform</h3>
+      <p>Full-stack file-sharing app with Envelope Encryption, VirusTotal API scanning, custom steganography detection (Chi-Square, RS Analysis), RBAC, and Email-based MFA.</p>
+      <div class="project-links">
+        <a href="https://github.com/AatifAli64/SecureShare-Secure-File-Sharing-Platform.git" target="_blank">→ GitHub</a>
+        <span style="color:#555;font-size:11px;">Node.js · Express.js · MySQL · JWT</span>
+      </div>
+    </div>
+
+    <!-- Card 7 (hidden) -->
+    <div class="project-card hidden-card">
+      <span class="project-tag">AI + SECURITY</span>
+      <h3>AutoML for Deep Learning-based Malware Detection</h3>
+      <p>Dual-engine platform combining static PE detection (FFNN on EMBER-2018) and dynamic live-process behavior monitoring (DARTS CNN), achieving 96.2% static and 94.9% runtime accuracy.</p>
+      <div class="project-links">
+        <a href="https://github.com/AatifAli64/AutoML-for-Deep-Learning-based-Malware-Detection.git" target="_blank">→ GitHub</a>
+        <span style="color:#555;font-size:11px;">Python · PyTorch · TensorFlow · PyQt5</span>
+      </div>
+    </div>
+
+    <!-- Card 8 (hidden) -->
+    <div class="project-card hidden-card">
+      <span class="project-tag">WEB</span>
+      <h3>Tour & Travel Booking Platform (MERN Stack)</h3>
+      <p>Full-stack MERN booking app with MVC architecture, React Context API for state management, JWT authentication, and Nodemailer-powered automated booking confirmations.</p>
+      <div class="project-links">
+        <a href="https://github.com/furqan12343/You-Travel-Webiste.git" target="_blank">→ GitHub</a>
+        <span style="color:#555;font-size:11px;">MongoDB · Express.js · React.js · Node.js</span>
+      </div>
+    </div>
+
+    <!-- Card 9 (hidden) -->
+    <div class="project-card hidden-card">
+      <span class="project-tag">TOOL</span>
+      <h3>Pac-Man Assembly Edition</h3>
+      <p>Classic Pac-Man game built from scratch in Assembly with real-time collision detection, smooth gameplay mechanics, and ghost AI using the Manhattan Distance algorithm.</p>
+      <div class="project-links">
+        <a href="https://github.com/AatifAli64/Pac-Man-Assembly-Edition" target="_blank">→ GitHub</a>
+        <span style="color:#555;font-size:11px;">x86 Assembly · MASM · Irvine32</span>
+      </div>
+    </div>
+
+    <!-- Card 10 (hidden) -->
+    <div class="project-card hidden-card">
+      <span class="project-tag">NETWORKING</span>
+      <h3>CNetSim: Enterprise Network Simulation</h3>
+      <p>Simulates a complex multi-block enterprise network using Cisco Packet Tracer. Features dynamic routing (EIGRP, OSPF, RIP v2), route redistribution, VLSM, DHCP, NAT, ACLs, and FTP/Email services.</p>
+      <div class="project-links">
+        <a href="https://github.com/AatifAli64/CNetSim-Advanced-Cisco-Packet-Tracer-Network-Simulation.git" target="_blank">→ GitHub</a>
+        <span style="color:#555;font-size:11px;">Packet Tracer · EIGRP · OSPF · NAT</span>
+      </div>
+    </div>
+
+  </div>
+  <div class="show-more-wrapper">
+    <button class="btn-outline" id="show-more-btn">Show More Projects</button>
+  </div>
+</section>
+
+<!-- ======== CONTACT ======== -->
+<section class="section" id="contact">
+  <span class="section-label">04 — Contact</span>
+  <h2 class="section-title">Get In Touch</h2>
+  <div class="section-divider"></div>
+  <div class="contact-grid">
+    <div class="contact-items">
+      <div class="contact-item">
+        <div class="contact-icon">✉</div>
+        <div>
+          <div class="contact-label">Email</div>
+          <div class="contact-value"><a href="mailto:www.aatifali92@gmail.com">www.aatifali92@gmail.com</a></div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">⌂</div>
+        <div>
+          <div class="contact-label">GitHub</div>
+          <div class="contact-value"><a href="https://github.com/AatifAli64" target="_blank">github.com/AatifAli64</a></div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">in</div>
+        <div>
+          <div class="contact-label">LinkedIn</div>
+          <div class="contact-value"><a href="https://www.linkedin.com/in/aatif-ali-khan-3a355a291/" target="_blank">Aatif Ali Khan</a></div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">📍</div>
+        <div>
+          <div class="contact-label">Location</div>
+          <div class="contact-value">Islamabad, Pakistan</div>
+        </div>
+      </div>
+    </div>
+    <form class="contact-form" id="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn-primary">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- ======== PROJECT MODAL ======== -->
+<div id="project-modal" class="modal-overlay">
+  <div class="modal-content">
+    <button class="modal-close-btn" id="modal-close-btn">&times;</button>
+    <h2 id="modal-title" class="modal-title">Project Title</h2>
+    <div id="modal-body" class="modal-body">
+      Project details will appear here.
+    </div>
+  </div>
+</div>
+
+<!-- ======== FOOTER ======== -->
+<footer class="footer">
+  <span class="footer-copy">© 2025 Aatif Ali Khan. All rights reserved.</span>
+  <div class="footer-socials">
+    <a href="https://github.com/AatifAli64" target="_blank" class="social-btn" title="GitHub">⟨/⟩</a>
+    <a href="https://www.linkedin.com/in/aatif-ali-khan-3a355a291/" target="_blank" class="social-btn" title="LinkedIn">in</a>
+    <a href="#" class="social-btn" title="Twitter">𝕏</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
